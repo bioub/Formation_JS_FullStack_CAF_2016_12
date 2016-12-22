@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/angular/angular.js"></script>
+</head>
+<body>
+<!--
+4 - scope : certaines directive créé des scopes qui limitent
+la portée des variables à des balises (équivalent aux fonction JS)
+-->
+    <div>
+        Prénoms : <input ng-model="prenoms" ng-list>
+    </div>
+    <p ng-repeat="prenom in prenoms track by $index">
+        Bonjour <span ng-bind="prenom"></span>
+    </p>
+</body>
+</html>

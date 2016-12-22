@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/angular/angular.js"></script>
+</head>
+<body>
+<!--
+1 - directive (ex : nb-model), attribut ou balise qui
+se tranforme en HTML + JS
+2 - compilation, au chargement on transforme toutes
+les directives
+3 - data binding (ex: ng-model), quand la vue change le model
+change automatique, ou inversement quand le model change la
+vue change
+-->
+    <div>
+        Prénom : <input ng-model="prenom">
+    </div>
+    <p ng-if="prenom">
+        Bonjour <span ng-bind="prenom"></span>
+    </p>
+</body>
+</html>

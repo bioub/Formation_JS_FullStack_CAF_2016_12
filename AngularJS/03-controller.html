@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app.module">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="03-controller.js"></script>
+</head>
+<body ng-controller="PrenomCtrl">
+    <div>
+        Prénom : <input ng-model="prenom">
+        <button ng-click="ajouter()">+</button>
+    </div>
+    <p ng-repeat="prenom in prenoms track by $index">
+        Bonjour <span ng-bind="prenom"></span>
+    </p>
+</body>
+</html>
