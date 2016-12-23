@@ -12,7 +12,8 @@
         <button ng-click="ajouter()">+</button>
     </div>
     <p ng-repeat="prenom in prenoms track by $index">
-        Bonjour <span ng-bind="prenom"></span>
+        Bonjour {{prenom}}
+        <button ng-click="supprimer($index)">-</button>
     </p>
 </body>
 </html>

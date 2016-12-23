@@ -20,8 +20,13 @@
 
   module.controller('PrenomCtrl', ['$http', '$scope', function($http, $scope) {
     $scope.prenoms = [];
+
     $scope.ajouter = function() {
       $scope.prenoms.push($scope.prenom);
+    };
+
+    $scope.supprimer = function(i) {
+      $scope.prenoms.splice(i, 1);
     };
   }]);
 }());

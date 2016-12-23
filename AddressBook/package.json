@@ -6,5 +6,26 @@
     "express": "^4.14.0",
     "mongoose": "^4.7.4",
     "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-systemjs-builder": "^0.2.7"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "src/client"
+    },
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.6.0",
+      "angular-ui-router": "github:angular-ui/angular-ui-router-bower@^0.3.2",
+      "bootstrap": "github:twbs/bootstrap@^3.3.7"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
   }
 }

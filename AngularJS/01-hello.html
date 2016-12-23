@@ -7,7 +7,7 @@
 </head>
 <body>
 <!--
-1 - directive (ex : nb-model), attribut ou balise qui
+1 - directive (ex : ng-model), attribut ou balise qui
 se tranforme en HTML + JS
 2 - compilation, au chargement on transforme toutes
 les directives
@@ -16,8 +16,8 @@ change automatique, ou inversement quand le model change la
 vue change
 -->
     <div>
-        Prénom : <input ng-model="prenom">
-    </div>
+    Prénom : <input ng-model="prenom">
+</div>
     <p ng-if="prenom">
         Bonjour <span ng-bind="prenom"></span>
     </p>
